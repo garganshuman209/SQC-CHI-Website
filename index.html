@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Super Quant Coders | NIT Jalandhar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0b0f1a;
+      color: #ffffff;
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.7);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      font-family: 'Orbitron', sans-serif;
+      color: #00e5ff;
+      font-size: 22px;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #00e5ff;
+    }
+
+    section {
+      padding: 100px 60px;
+      min-height: 100vh;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 42px;
+      color: #00e5ff;
+    }
+
+    .hero-text p {
+      margin-top: 20px;
+      line-height: 1.6;
+      color: #cccccc;
+    }
+
+    /* Robot */
+.robot {
+  width: 260px;
+  height: 260px;
+  border-radius: 20px;
+  overflow: hidden;
+  animation: float 3s ease-in-out infinite;
+  box-shadow: 0 0 30px #00e5ff;
+}
+
+.robot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    h3 {
+      font-family: 'Orbitron';
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #00e5ff;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(0,229,255,0.2);
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+    }
+
+    /* Chatbot */
+    .chatbot {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      background: #111;
+      border-radius: 10px;
+      display: none;
+      flex-direction: column;
+      border: 1px solid #00e5ff;
+    }
+
+    .chat-header {
+      background: #00e5ff;
+      color: #000;
+      padding: 10px;
+      font-family: 'Orbitron';
+    }
+
+    .chat-body {
+      padding: 10px;
+      height: 200px;
+      overflow-y: auto;
+      font-size: 14px;
+    }
+
+    .chat-input {
+      display: flex;
+    }
+
+    .chat-input input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      outline: none;
+    }
+
+    .chat-input button {
+      padding: 10px;
+      background: #00e5ff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .bot-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #00e5ff;
+      color: #000;
+      font-family: 'Orbitron';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 0 20px #00e5ff;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1>Super Quant Coders</h1>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#events">Events</a>
+    <a href="#projects">Projects</a>
+    <a href="#team">Team</a>
+    <a href="#join">Join</a>
+  </div>
+</nav>
+
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h2>Welcome to Super Quant Coders</h2>
+    <p>
+      The official tech club of Dr. B. R. Ambedkar National Institute of Technology.
+      We build, innovate, code and solve real-world problems using technology.
+    </p>
+  </div>
+  <div class="robot">
+  <img src="images/ChiChi.png" alt="Chi-Chi Robot">
+</div>
+
+</section>
+
+<section id="about">
+  <h3>About Us</h3>
+  <p>
+    Super Quant Coders is a community of passionate coders, developers, and innovators.
+    We focus on competitive programming, development, AI, and emerging technologies.
+  </p>
+</section>
+
+<section id="events">
+  <h3>Events</h3>
+  <div class="card-container">
+    <div class="card">Hackathons & Coding Battles</div>
+    <div class="card">Workshops & Bootcamps</div>
+    <div class="card">Guest Tech Talks</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h3>Projects</h3>
+  <div class="card-container">
+    <div class="card">AI Chatbots</div>
+    <div class="card">Web Applications</div>
+    <div class="card">Problem Solving Tools</div>
+  </div>
+</section>
+
+<section id="team">
+  <h3>Our Team</h3>
+  <p>Driven by students. Powered by curiosity.</p>
+</section>
+
+<section id="join">
+  <h3>Join Us</h3>
+  <p>
+    Want to be part of Super Quant Coders?<br>
+    Participate in events, build projects, and grow together.
+  </p>
+</section>
+
+<footer>
+  © 2026 Super Quant Coders | Dr. B. R. Ambedkar NIT
+</footer>
+
+<!-- Chatbot -->
+<div class="bot-btn" onclick="toggleChat()">🤖</div>
+
+<div class="chatbot" id="chatbot">
+  <div class="chat-header">Chi-Chi Assistant</div>
+  <div class="chat-body" id="chatBody">
+    <p><b>Chi-Chi:</b> Hi! Ask me about our club 👋</p>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Ask something...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script>
+  function toggleChat() {
+    const bot = document.getElementById("chatbot");
+    bot.style.display = bot.style.display === "flex" ? "none" : "flex";
+  }
+
+  function sendMessage() {
+    const input = document.getElementById("userInput");
+    const msg = input.value.toLowerCase();
+    const chat = document.getElementById("chatBody");
+
+    if (!msg) return;
+
+    chat.innerHTML += `<p><b>You:</b> ${input.value}</p>`;
+
+    let reply = "I'm still learning 🤖";
+
+    if (msg.includes("event")) reply = "We organize hackathons, workshops, and tech talks 🚀";
+    if (msg.includes("join")) reply = "You can join us through our recruitment drives 💙";
+    if (msg.includes("club")) reply = "Super Quant Coders is the tech club of NIT Jalandhar!";
+    if (msg.includes("hello")) reply = "Hello! Nice to meet you 😄";
+
+    chat.innerHTML += `<p><b>Chi-Chi:</b> ${reply}</p>`;
+    chat.scrollTop = chat.scrollHeight;
+    input.value = "";
+  }
+</script>
+
+</body>
+</html>
